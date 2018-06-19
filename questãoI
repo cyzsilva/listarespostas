@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+void fizzBizz(int start, int end)
+{
+    printf("\nFizzBizz::START: %d, %d\n", start, end);
+    int number = start;
+    
+    while(number<=end){
+        if ((number % 15) == 0){
+            printf("\nfizzbizz ");
+        }else if(number % 3 == 0){
+            printf("\nfizz" );
+        }else if(number % 5 == 0){
+            printf("\nbizz");    
+        }else{
+            printf("\n%d",number); 
+        }
+        number++;
+    }
+ ; 
+
+    printf("\nFizzBizz::END\n");
+}
+
+int main()
+{
+    printf("\n### CESAR School :: Sistemas Digitais :: Coding1 :: FizzBizz ###\n");
+    
+    fizzBizz(1, 6);
+    fizzBizz(1, 16);
+    fizzBizz(1, 100);
+    
+    return 0;
+}
